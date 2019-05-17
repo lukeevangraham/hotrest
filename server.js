@@ -135,7 +135,7 @@ app.post("/api/tables", function (req, res) {
   if (tables.length === 4) {
     // PUSH TO WAITING
     waiting.push(newtable);
-    moreInfo.waitListNumber = waiting.length - 1;
+    moreInfo.waitListNumber = waiting.length;
     moreInfo.reservationAdded = false;
   } else {
     tables.push(newtable);
